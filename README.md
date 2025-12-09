@@ -8,10 +8,9 @@ Scripts to extract and visualize how the NumPy repository evolves over time. The
 - Extraction script that traverses the full NumPy Git history (merge commits are skipped)
 
 ## Setup
-1) Create/activate a Python environment.
+1) Create/activate a Python environment : `python3 -m venv .venv` `source .venv/bin/activate`
 2) Install dependencies: `pip install -r requirements.txt`
-3) Ensure the NumPy repo is available at external/numpy : `git clone https://github.com/numpy/numpy.git external/numpy`
-.
+3) Clone NumPy into `external/numpy`: `git clone https://github.com/numpy/numpy.git external/numpy`
 
 ## Extract the data
 Runs PyDriller across the NumPy repo and aggregates monthly metrics.
