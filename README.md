@@ -10,7 +10,8 @@ Scripts to extract and visualize how the NumPy repository evolves over time. The
 ## Setup
 1) Create/activate a Python environment.
 2) Install dependencies: `pip install -r requirements.txt`
-3) Ensure the NumPy repo is available at `external/numpy` (included here; update as needed).
+3) Ensure the NumPy repo is available at external/numpy : `git clone https://github.com/numpy/numpy.git external/numpy`
+.
 
 ## Extract the data
 Runs PyDriller across the NumPy repo and aggregates monthly metrics.
