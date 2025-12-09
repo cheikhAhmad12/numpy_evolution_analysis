@@ -5,7 +5,7 @@ Scripts to extract and visualize how the NumPy repository evolves over time. The
 ## What you get
 - Cleaned monthly dataset with `commits`, `additions`, `deletions`, and total `churn`
 - Time-series, distribution, heatmap, and scatter plots in `plots/`
-- Reproducible extraction script that traverses the full NumPy Git history (merge commits are skipped)
+- Extraction script that traverses the full NumPy Git history (merge commits are skipped)
 
 ## Setup
 1) Create/activate a Python environment.
