@@ -10,18 +10,12 @@ DATA_CLEAN.mkdir(parents=True, exist_ok=True)
 
 
 def main():
-    """
-    Traverse the full Git history of the NumPy repository using PyDriller,
-    extract commit metadata and code churn information, and aggregate
-    the results at a monthly level.
-    The output is saved as a CSV file for further analysis.
-    """
     records = []
-
     print(f"Analyzing repository: {REPO_PATH.resolve()}")
+    #Traverse the full Git history,
     for commit in Repository(str(REPO_PATH)).traverse_commits():
 
-        # Optional: skip merge commits since they do not introduce new code changes
+        # skip merge commits since they do not introduce new code changes
         if len(commit.parents) > 1:
             continue
 
@@ -29,7 +23,7 @@ def main():
         month = date.strftime("%Y-%m")
         additions = commit.insertions or 0
         deletions = commit.deletions or 0
-        
+
         records.append({
             "month": month,
             "hash": commit.hash,
