@@ -23,8 +23,6 @@ Outputs: `data/clean/monthly_activity.csv` with columns:
 - `additions`, `deletions` (line-level)
 - `churn` (`additions + deletions`)
 
-Note: Walking the full history can take a while depending on your machine.
-
 ## Generate plots
 Uses the cleaned CSV to build PNGs in `plots/`.
 ```
